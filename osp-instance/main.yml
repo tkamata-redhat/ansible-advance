@@ -1,0 +1,10 @@
+---
+- hosts: jumpbox
+  gather_facts: true
+  roles:
+  - name: osp-facts
+  - name: create-network
+  - name: create-security
+  - name: failover
+  - name: creaste-instance
+  - name: install-apache
